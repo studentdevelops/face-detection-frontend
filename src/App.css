@@ -1,38 +1,92 @@
-.App {
+#tsparticles {
+  position: fixed;
+  z-index: -1;
+}
+
+.center {
   text-align: center;
+  font-size: xx-large;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.center-div {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btn {
+    padding: 5px 25px;
+    border-radius: 10px;
+    background-color: #64646400;
+    border: 2px solid white;
+    transition: all 100ms ease-in-out;
+    color: white;
+}
+.btn:hover {
+    transform: scale(1.1);
+}
+.btn:active {
+    transform: scale(0.9);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button {
+  user-select: none;
+  width: 30%;
+  text-align: center;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 20px;
+  margin-right: 5%;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+  outline: #151515;
+  font-weight: bold;
 }
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+      linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+      linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+      linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+      linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+      linear-gradient(
+        #1d1d1d 25%,
+        #1a1a1a 25%,
+        #1a1a1a 50%,
+        transparent 50%,
+        transparent 75%,
+        #242424 75%,
+        #242424
+      );
+    background-color: #131313;
+    background-size: 20px 20px;
+    margin: 2% 15%;
+    padding: 2% 0;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 4px 8px 8px -4px black;
+  }
+  
+  .register-form > input {
+    width: 20vw;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(146, 146, 146);
+    outline: none;
+    border: 1px solid black;
+    color: white;
+  }
+  
+  .register-form > h2 {
+      font-size: 2rem;
+      margin: 1%;
+  }
+  
+  .highlight {
+    color: white;
+    size: 0.7rem;
+  }
