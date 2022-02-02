@@ -4,14 +4,11 @@ import "./App.css";
 import DisplayImage from "./Components/DisplayPicture/DisplayImage";
 import React from "react";
 import ParticlesBG from "./ParticlesBG/ParticlesBG";
-import Clarifai from "clarifai";
 import Register from "./Components/Register/Register";
 import SignIn from "./Components/SignIn/SignIn";
 import IntroText from "./Components/InputPicture/IntroText";
 
-const app = new Clarifai.App({
-  apiKey: "b726579375c344d08410ed7689238a64",
-});
+
 
 const InitialState = {
   searchField: "",
