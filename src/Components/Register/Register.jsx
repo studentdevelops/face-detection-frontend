@@ -27,7 +27,7 @@ class Register extends React.Component {
     if (!this.state.email || !this.state.password || !this.state.name) {
       return;
     }
-    fetch("http://localhost:3001/register", {
+    fetch("https://radiant-cliffs-05082.herokuapp.com/register", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

@@ -74,7 +74,7 @@ class App extends React.Component {
 
   onImageSubmit = () => {
     this.setState({ img: this.state.searchField });
-    fetch("http://localhost:3001/imageurl", {
+    fetch("https://radiant-cliffs-05082.herokuapp.com/imageurl", {
       method: "post",
       headers: {
         "Content-Type": "application/json",
@@ -86,7 +86,7 @@ class App extends React.Component {
       .then((response) => response.json())
       .then((response) => {
         if (response) {
-          fetch("http://localhost:3001/image", {
+          fetch("https://radiant-cliffs-05082.herokuapp.com/image", {
             method: "put",
             headers: {
               "Content-Type": "application/json",
